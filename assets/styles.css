@@ -43,12 +43,61 @@ nav ul li a.btn-entrar:hover {
   background-color: #ff6600;
 }
 
-/* Seção principal */
+/* Seção Home */
 #home {
   text-align: center;
   padding: 50px 0;
 }
 
+#hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #0098e5;
+  color: white;
+}
+
+#hero .content {
+  width: 50%;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn-comecar,
+.btn-saiba-mais {
+  background-color: #ff9900;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comecar:hover,
+.btn-saiba-mais:hover {
+  background-color: #ff6600;
+}
+
+#hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Seção de Vídeos Shorts */
 #shorts-videos {
   background-color: #f4f4f4;
   padding: 50px 10%;
@@ -79,6 +128,66 @@ nav ul li a.btn-entrar:hover {
   height: 355px;
   border-radius: 5px;
   margin: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Narração e Clonagem com IA */
+#narracao-clonagem {
+  background-color: #e0f7fa;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.narracao-content h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.narracao-content p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #666;
+}
+
+.narracao-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Seção do Banco de Imagens */
+#banco-imagens {
+  background-color: #f4f4f4;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.banco-content h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.banco-content p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #666;
+}
+
+.banco-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.banco-images img {
+  width: 200px;
+  height: 355px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 5px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
