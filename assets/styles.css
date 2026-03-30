@@ -47,6 +47,19 @@ nav ul li a.btn-entrar:hover {
 #home {
   text-align: center;
   padding: 50px 0;
+  overflow: visible;
+  justify-content: flex-start;
+  border-radius: 0px;
+  opacity: 1;
+  align-self: flex-start;
+  min-width: 100%;
+  max-width: 100%;
+  order: 1;
+  min-height: 0px;
+  width: 100%;
+  flex-grow: 1;
+  height: max-content;
+  margin: 0px;
 }
 
 #hero {
@@ -189,6 +202,13 @@ nav ul li a.btn-entrar:hover {
   margin: 10px;
   border-radius: 5px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bubble-R-Container */
+.bubble-r-container.flex.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 /* Rodapé */
