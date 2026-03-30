@@ -44,114 +44,11 @@ nav ul li a.btn-entrar:hover {
 }
 
 /* Seção principal */
-#hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 10%;
-  background-color: #0098e5;
-  color: white;
-}
-
-#hero .content {
-  width: 50%;
-}
-
-#hero h1 {
-  font-size: 2.5em;
-}
-
-#hero p {
-  font-size: 1.2em;
-  margin: 20px 0;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.btn-comecar,
-.btn-saiba-mais {
-  background-color: #ff9900;
-  padding: 15px 30px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-comecar:hover,
-.btn-saiba-mais:hover {
-  background-color: #ff6600;
-}
-
-/* Imagem do hero */
-#hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Estilos para o rodapé */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
+#home {
   text-align: center;
+  padding: 50px 0;
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #ff9900;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para a seção de Vídeos Shorts */
-#shorts-videos {
-  background-color: #f4f4f4;
-  padding: 50px 10%;
-  text-align: center;
-}
-
-.shorts-content h2 {
-  font-size: 2.5em;
-  color: #333;
-}
-
-.shorts-content p {
-  font-size: 1.2em;
-  margin-top: 20px;
-  color: #666;
-}
-
-.shorts-images {
-  margin-top: 30px;
-}
-
-.shorts-images img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para a seção de Vídeos Shorts */
 #shorts-videos {
   background-color: #f4f4f4;
   padding: 50px 10%;
@@ -183,4 +80,33 @@ footer {
   border-radius: 5px;
   margin: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
