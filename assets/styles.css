@@ -211,6 +211,24 @@ nav ul li a.btn-entrar:hover {
   flex-wrap: nowrap;
 }
 
+/* Animação Move-Forever2 */
+@keyframes move-forever2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Parallax2 */
+.parallax2 {
+  animation: move-forever2 8s linear infinite;
+}
+
 /* Rodapé */
 footer {
   background-color: #333;
