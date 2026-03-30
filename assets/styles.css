@@ -122,7 +122,7 @@ nav ul li a.btn-entrar:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; /* Adiciona espaçamento entre os itens */
+  gap: 20px; /* Espaçamento entre os elementos */
 }
 
 .narracao-content {
