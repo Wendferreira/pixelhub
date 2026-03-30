@@ -110,6 +110,48 @@ nav ul li a.btn-entrar:hover {
   border-radius: 10px;
 }
 
+/* Seção de Narração e Clonagem com IA */
+#narracao-clonagem {
+  background-color: #e0f7fa;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.narracao-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.narracao-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.narracao-content h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.narracao-content p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #666;
+}
+
+.narracao-images {
+  width: 50%;
+}
+
+.narracao-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
 /* Seção de Vídeos Shorts */
 #shorts-videos {
   background-color: #f4f4f4;
@@ -142,91 +184,6 @@ nav ul li a.btn-entrar:hover {
   border-radius: 5px;
   margin: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Seção de Narração e Clonagem com IA */
-#narracao-clonagem {
-  background-color: #e0f7fa;
-  padding: 50px 10%;
-  text-align: center;
-}
-
-.narracao-content h2 {
-  font-size: 2.5em;
-  color: #333;
-}
-
-.narracao-content p {
-  font-size: 1.2em;
-  margin-top: 20px;
-  color: #666;
-}
-
-.narracao-images img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-/* Seção do Banco de Imagens */
-#banco-imagens {
-  background-color: #f4f4f4;
-  padding: 50px 10%;
-  text-align: center;
-}
-
-.banco-content h2 {
-  font-size: 2.5em;
-  color: #333;
-}
-
-.banco-content p {
-  font-size: 1.2em;
-  margin-top: 20px;
-  color: #666;
-}
-
-.banco-images {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.banco-images img {
-  width: 200px;
-  height: 355px;
-  object-fit: cover;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Bubble-R-Container */
-.bubble-r-container.flex.column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-/* Animação Move-Forever2 */
-@keyframes move-forever2 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Parallax2 */
-.parallax2 {
-  animation: move-forever2 8s linear infinite;
 }
 
 /* Rodapé */
