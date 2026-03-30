@@ -93,10 +93,31 @@ nav ul li a.btn-entrar:hover {
   border-radius: 10px;
 }
 
-/* Rodapé */
+/* Estilos para o rodapé */
 footer {
-  text-align: center;
-  padding: 20px;
   background-color: #333;
   color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
