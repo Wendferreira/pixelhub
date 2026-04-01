@@ -105,8 +105,8 @@ nav ul li a.btn-entrar:hover {
 }
 
 #hero-image img {
-  /*width: 380px;
-  height: 180.3px;*/
+  width: 380px;
+  height: 180.3px;
   max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -116,39 +116,49 @@ nav ul li a.btn-entrar:hover {
 /* Seção de Narração e Clonagem com IA */
 #narracao-clonagem {
   background-color: #e0f7fa;
-  padding: 50px 10%;
+  padding: 70px 10%;
   text-align: center;
 }
 
 .narracao-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 60px;
 }
 
 .narracao-content {
-  flex: 1 1 45%;
-  padding: 20px 35px 20px 20px;
+  flex: 1 1 62%;
+  min-height: 180.3px;
+  padding: 0 35px 0 0;
   border-right: 2px solid #0098e5;
   box-sizing: border-box;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .narracao-content h2 {
   font-size: 2.5em;
   color: #333;
+  line-height: 1.15;
+  margin: 0 0 18px;
 }
 
 .narracao-content p {
   font-size: 1.2em;
-  margin-top: 20px;
+  margin: 0;
   color: #666;
+  line-height: 1.6;
 }
 
 .narracao-images {
-  flex: 1 1 45%;
+  flex: 0 0 38%;
+  min-height: 180.3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +171,7 @@ nav ul li a.btn-entrar:hover {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  margin-top: 0;
   display: block;
 }
 
@@ -231,25 +241,27 @@ footer {
 /* Seção do Banco de Imagens */
 #banco-imagens {
   background-color: #f4f4f4;
-  padding: 50px 10%;
+  padding: 70px 10%;
   text-align: center;
 }
 
 .banco-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 60px;
 }
 
 .banco-images {
-  width: 45%;
+  flex: 0 0 38%;
+  min-height: 180.3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-wrap: nowrap;
 }
 
 .banco-images img {
@@ -259,56 +271,34 @@ footer {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  margin: 0;
   display: block;
 }
 
 .banco-content {
-  width: 45%;
+  flex: 1 1 62%;
+  min-height: 180.3px;
   padding-left: 35px;
   border-left: 2px solid #0098e5;
   box-sizing: border-box;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banco-content h2 {
   font-size: 2.5em;
   color: #333;
+  line-height: 1.15;
+  margin: 0 0 18px;
 }
 
 .banco-content p {
   font-size: 1.2em;
-  margin-top: 20px;
+  margin: 0;
   color: #666;
-}
-
-/* Rodapé */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #ff9900;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
+  line-height: 1.6;
 }
 
 /* ===================================================== */
@@ -317,7 +307,7 @@ footer {
 /* ===================================================== */
 
 #preview-recursos {
-  background-color: #f4f4f4;
+  background-color: #e0f7fa;
   padding: 70px 10%;
 }
 
@@ -326,7 +316,7 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 60px;
   flex-wrap: nowrap;
@@ -334,6 +324,7 @@ footer {
 
 .template-image {
   flex: 0 0 38%;
+  min-height: 180.3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,17 +342,21 @@ footer {
 
 .template-content {
   flex: 1 1 62%;
+  min-height: 180.3px;
   padding-right: 35px;
   border-right: 2px solid #0098e5;
   box-sizing: border-box;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .template-content h2 {
   font-size: 2.5em;
   color: #333;
   line-height: 1.15;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
@@ -382,7 +377,7 @@ footer {
 
 #preview-roteiro {
   background-color: #f4f4f4;
-  padding: 20px 10% 70px;
+  padding: 70px 10%;
 }
 
 .roteiro-container {
@@ -390,7 +385,7 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 60px;
   flex-wrap: nowrap;
@@ -398,6 +393,7 @@ footer {
 
 .roteiro-image {
   flex: 0 0 38%;
+  min-height: 180.3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,17 +411,21 @@ footer {
 
 .roteiro-content {
   flex: 1 1 62%;
+  min-height: 180.3px;
   padding-left: 35px;
   border-left: 2px solid #0098e5;
   box-sizing: border-box;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .roteiro-content h2 {
   font-size: 2.5em;
   color: #333;
   line-height: 1.15;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
@@ -442,18 +442,24 @@ footer {
 /* Responsividade */
 @media (max-width: 1024px) {
   .template-container,
-  .roteiro-container {
+  .roteiro-container,
+  .narracao-container,
+  .banco-container {
     gap: 40px;
   }
 
   .template-content h2,
-  .roteiro-content h2 {
-    font-size: 2.5em;
+  .roteiro-content h2,
+  .narracao-content h2,
+  .banco-content h2 {
+    font-size: 2.3em;
   }
 
   .template-content p,
-  .roteiro-content p {
-    font-size: 1.15em;
+  .roteiro-content p,
+  .narracao-content p,
+  .banco-content p {
+    font-size: 1.1em;
   }
 }
 
@@ -466,29 +472,16 @@ footer {
     gap: 30px;
   }
 
-  .template-content {
-    border-right: none;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .roteiro-content {
-    border-left: none;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .narracao-content {
-    border-right: none;
-    padding-right: 20px;
-    text-align: center;
-  }
-
+  .template-content,
+  .roteiro-content,
+  .narracao-content,
   .banco-content {
-    border-left: none;
-    padding-left: 0;
+    border: none;
+    padding: 0;
     text-align: center;
+    flex: 1 1 100%;
     width: 100%;
+    min-height: auto;
   }
 
   .template-image,
@@ -497,37 +490,29 @@ footer {
   .banco-images {
     flex: 1 1 100%;
     width: 100%;
-  }
-
-  .template-content,
-  .roteiro-content {
-    flex: 1 1 100%;
+    min-height: auto;
   }
 
   .template-content h2,
-  .roteiro-content h2 {
-    font-size: 2.2em;
+  .roteiro-content h2,
+  .narracao-content h2,
+  .banco-content h2 {
+    font-size: 2.1em;
   }
 
   .template-content p,
-  .roteiro-content p {
+  .roteiro-content p,
+  .narracao-content p,
+  .banco-content p {
     font-size: 1.05em;
   }
 
   #preview-recursos,
-  #preview-roteiro {
+  #preview-roteiro,
+  #narracao-clonagem,
+  #banco-imagens {
     padding-left: 6%;
     padding-right: 6%;
-  }
-
-  #preview-recursos {
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-
-  #preview-roteiro {
-    padding-top: 10px;
-    padding-bottom: 50px;
   }
 
   #hero-image img,
@@ -545,12 +530,16 @@ footer {
 
 @media (max-width: 480px) {
   .template-content h2,
-  .roteiro-content h2 {
+  .roteiro-content h2,
+  .narracao-content h2,
+  .banco-content h2 {
     font-size: 1.8em;
   }
 
   .template-content p,
-  .roteiro-content p {
+  .roteiro-content p,
+  .narracao-content p,
+  .banco-content p {
     font-size: 1em;
   }
 }
