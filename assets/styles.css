@@ -130,7 +130,10 @@ nav ul li a.btn-entrar:hover {
 
 .narracao-content {
   flex: 1 1 45%;
-  padding: 20px;
+  padding: 20px 35px 20px 20px;
+  border-right: 2px solid #0098e5;
+  box-sizing: border-box;
+  text-align: right;
 }
 
 .narracao-content h2 {
@@ -262,6 +265,10 @@ footer {
 
 .banco-content {
   width: 45%;
+  padding-left: 35px;
+  border-left: 2px solid #0098e5;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .banco-content h2 {
@@ -452,7 +459,9 @@ footer {
 
 @media (max-width: 768px) {
   .template-container,
-  .roteiro-container {
+  .roteiro-container,
+  .narracao-container,
+  .banco-container {
     flex-direction: column;
     gap: 30px;
   }
@@ -467,6 +476,19 @@ footer {
     border-left: none;
     padding-left: 0;
     text-align: center;
+  }
+
+  .narracao-content {
+    border-right: none;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .banco-content {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
   }
 
   .template-image,
