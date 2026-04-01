@@ -105,8 +105,8 @@ nav ul li a.btn-entrar:hover {
 }
 
 #hero-image img {
-  width: 380px;
-  height: 180.3px;
+  /*width: 380px;
+  height: 180.3px;*/
   max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
