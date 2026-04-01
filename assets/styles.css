@@ -215,3 +215,77 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* Seção do Banco de Imagens */
+#banco-imagens {
+  background-color: #f4f4f4;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.banco-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.banco-images {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.banco-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.banco-content {
+  width: 45%;
+}
+
+.banco-content h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.banco-content p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
