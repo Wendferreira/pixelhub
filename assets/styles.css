@@ -105,9 +105,12 @@ nav ul li a.btn-entrar:hover {
 }
 
 #hero-image img {
+  width: 380px;
+  height: 180.3px;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
 
 /* Seção de Narração e Clonagem com IA */
@@ -143,14 +146,20 @@ nav ul li a.btn-entrar:hover {
 
 .narracao-images {
   flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .narracao-images img {
+  width: 380px;
+  height: 180.3px;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  display: block;
 }
 
 /* Seção de Vídeos Shorts */
@@ -234,16 +243,21 @@ footer {
 .banco-images {
   width: 45%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .banco-images img {
-  width: 100%;
-  height: auto;
+  width: 380px;
+  height: 180.3px;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin: 10px;
+  display: block;
 }
 
 .banco-content {
@@ -319,9 +333,10 @@ footer {
 }
 
 .template-image img {
-  width: 100%;
-  max-width: 380px;
-  height: auto;
+  width: 380px;
+  height: 180.3px;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: block;
@@ -382,9 +397,10 @@ footer {
 }
 
 .roteiro-image img {
-  width: 100%;
-  max-width: 380px;
-  height: auto;
+  width: 380px;
+  height: 180.3px;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: block;
@@ -454,8 +470,11 @@ footer {
   }
 
   .template-image,
-  .roteiro-image {
+  .roteiro-image,
+  .narracao-images,
+  .banco-images {
     flex: 1 1 100%;
+    width: 100%;
   }
 
   .template-content,
@@ -487,6 +506,18 @@ footer {
   #preview-roteiro {
     padding-top: 10px;
     padding-bottom: 50px;
+  }
+
+  #hero-image img,
+  .narracao-images img,
+  .banco-images img,
+  .template-image img,
+  .roteiro-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    aspect-ratio: 380 / 180.3;
+    object-fit: cover;
   }
 }
 
