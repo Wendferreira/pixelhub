@@ -1,0 +1,428 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a.btn-entrar {
+  background-color: #ff9900;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a.btn-entrar:hover {
+  background-color: #ff6600;
+  text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Página de preços */
+.pricing-page {
+  background-color: #f4f4f4;
+}
+
+.pricing-page-main {
+  min-height: calc(100vh - 140px);
+}
+
+#preco-hero {
+  background: linear-gradient(180deg, #1098e8 0%, #1298e6 100%);
+  padding: 70px 6% 30px;
+}
+
+.preco-hero-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.preco-hero-container h1 {
+  font-size: 4em;
+  line-height: 1.05;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 22px;
+  font-weight: bold;
+}
+
+.preco-billing-badge {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.35em;
+  font-weight: bold;
+  margin: 0 0 48px;
+}
+
+.preco-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+
+.preco-card {
+  background-color: #f2f2f2;
+  border-radius: 28px;
+  padding: 34px 30px 34px;
+  box-sizing: border-box;
+  flex: 1 1 340px;
+  max-width: 360px;
+  min-height: 860px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.preco-card-destaque {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.preco-card-top h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  color: #1f2937;
+  margin: 0 0 26px;
+  font-weight: bold;
+}
+
+.preco-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dde2e7;
+  margin: 0 0 26px;
+}
+
+.preco-divider-lista {
+  margin-top: 24px;
+}
+
+.preco-descricao {
+  color: #3f4a5a;
+  font-size: 1.15em;
+  line-height: 1.45;
+  margin: 0 0 28px;
+  min-height: 126px;
+}
+
+.preco-valor-box {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.preco-valor {
+  font-size: 3.25em;
+  line-height: 1;
+  font-weight: bold;
+  color: #202938;
+}
+
+.destaque-free {
+  font-size: 3.1em;
+}
+
+.preco-periodo {
+  font-size: 1.35em;
+  line-height: 1;
+  color: #3f4a5a;
+  padding-bottom: 8px;
+}
+
+.preco-btn {
+  width: 100%;
+  min-height: 54px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.preco-btn-outline {
+  border: 1.5px solid #6a40f4;
+  color: #6a40f4;
+  background-color: transparent;
+}
+
+.preco-btn-outline:hover {
+  background-color: rgba(106, 64, 244, 0.08);
+  text-decoration: none;
+}
+
+.preco-btn-fill {
+  background: linear-gradient(90deg, #6b3df5 0%, #7c43f3 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 18px rgba(107, 61, 245, 0.22);
+}
+
+.preco-btn-fill:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.preco-lista-titulo {
+  font-size: 1.08em;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 18px;
+}
+
+.preco-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.preco-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.preco-item-left {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  color: #243043;
+  font-size: 1.03em;
+  line-height: 1.4;
+}
+
+.preco-check {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 50%;
+  background-color: #1498e5;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.preco-badge {
+  background-color: #1498e5;
+  color: #ffffff;
+  font-size: 0.78em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 5px 8px;
+  border-radius: 7px;
+  white-space: nowrap;
+  margin-top: 1px;
+}
+
+.preco-footnote {
+  margin-top: 60px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.preco-footnote p {
+  color: #ffffff;
+  font-size: 1.15em;
+  line-height: 1.45;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .preco-hero-container h1 {
+    font-size: 3.3em;
+  }
+
+  .preco-grid {
+    gap: 28px;
+  }
+
+  .preco-card {
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .preco-card-destaque {
+    transform: none;
+  }
+
+  .preco-valor {
+    font-size: 2.8em;
+  }
+
+  .destaque-free {
+    font-size: 2.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  #preco-hero {
+    padding: 56px 6% 26px;
+  }
+
+  .preco-hero-container h1 {
+    font-size: 2.5em;
+  }
+
+  .preco-billing-badge {
+    font-size: 1.15em;
+    margin-bottom: 34px;
+  }
+
+  .preco-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .preco-card {
+    width: 100%;
+    max-width: 520px;
+    padding: 28px 22px 28px;
+    border-radius: 24px;
+  }
+
+  .preco-card-top h2 {
+    font-size: 1.75em;
+  }
+
+  .preco-descricao {
+    min-height: auto;
+    font-size: 1.05em;
+  }
+
+  .preco-valor {
+    font-size: 2.4em;
+  }
+
+  .destaque-free {
+    font-size: 2.3em;
+  }
+
+  .preco-periodo {
+    font-size: 1.1em;
+    padding-bottom: 6px;
+  }
+
+  .preco-footnote p {
+    font-size: 1em;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preco-hero-container h1 {
+    font-size: 2em;
+  }
+
+  .preco-card {
+    padding: 24px 18px 24px;
+  }
+
+  .preco-card-top h2 {
+    font-size: 1.6em;
+  }
+
+  .preco-valor {
+    font-size: 2.1em;
+  }
+
+  .destaque-free {
+    font-size: 2em;
+  }
+
+  .preco-periodo,
+  .preco-descricao,
+  .preco-item-left,
+  .preco-footnote p {
+    font-size: 0.95em;
+  }
+
+  .preco-badge {
+    font-size: 0.72em;
+    padding: 4px 7px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
