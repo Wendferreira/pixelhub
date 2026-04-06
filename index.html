@@ -20,7 +20,6 @@
   </header>
 
   <main>
-    <!-- Section Home -->
     <section id="home">
       <div id="hero">
         <div class="content">
@@ -37,7 +36,6 @@
       </div>
     </section>
 
-    <!-- Seção de Vídeos Shorts -->
     <section id="shorts-videos">
       <div class="shorts-content">
         <h2>Crie vídeos curtos incríveis em segundos.</h2>
@@ -72,7 +70,6 @@
       </div>
     </section>
 
-    <!-- Seção de Narração e Clonagem com IA -->
     <section id="narracao-clonagem">
       <div class="narracao-container">
         <div class="narracao-content">
@@ -85,7 +82,6 @@
       </div>
     </section>
 
-    <!-- Seção do Banco de Imagens -->
     <section id="banco-imagens">
       <div class="banco-container">
         <div class="banco-images">
@@ -98,7 +94,6 @@
       </div>
     </section>
 
-    <!-- Preview Recursos -->
     <section id="preview-recursos">
       <div class="template-container">
         <div class="template-image">
@@ -111,7 +106,6 @@
       </div>
     </section>
 
-    <!-- Preview Roteiro -->
     <section id="preview-roteiro">
       <div class="roteiro-container">
         <div class="roteiro-image">
@@ -124,7 +118,6 @@
       </div>
     </section>
 
-    <!-- Seção de cálculo -->
     <section id="economia-calculo">
       <div class="economia-container">
         <h2>Quanto você economiza usando a plataforma Pixel Hub?</h2>
@@ -136,15 +129,14 @@
             id="videos-por-mes"
             min="1"
             step="1"
-            value="1"
             placeholder="Quantidade de vídeos"
           >
         </div>
 
-        <div class="economia-resultado">
+        <div class="economia-resultado" id="economia-resultado" style="display: none;">
           <p class="economia-label">Economia de tempo de até:</p>
-          <h3 id="resultado-horas">60 Horas de trabalho ao ano</h3>
-          <p id="resultado-valor">Se levarmos em conta um valor modesto de R$ 12,00/h é o equivalente a uma incrível economia de R$ 720,00 ao ano.</p>
+          <h3 id="resultado-horas"></h3>
+          <p id="resultado-valor"></p>
         </div>
       </div>
     </section>
@@ -166,6 +158,7 @@
   <script>
     (function () {
       const inputVideos = document.getElementById("videos-por-mes");
+      const economiaResultado = document.getElementById("economia-resultado");
       const resultadoHoras = document.getElementById("resultado-horas");
       const resultadoValor = document.getElementById("resultado-valor");
 
@@ -179,8 +172,37 @@
         }).format(valor);
       }
 
+      function esconderResultado() {
+        economiaResultado.classList.remove("mostrar");
+        setTimeout(() => {
+          if (!economiaResultado.classList.contains("mostrar")) {
+            economiaResultado.style.display = "none";
+          }
+        }, 450);
+      }
+
+      function mostrarResultado() {
+        economiaResultado.style.display = "block";
+        requestAnimationFrame(() => {
+          economiaResultado.classList.add("mostrar");
+        });
+      }
+
       function atualizarCalculo() {
-        const quantidade = Math.max(1, parseInt(inputVideos.value, 10) || 1);
+        const valorDigitado = inputVideos.value.trim();
+
+        if (valorDigitado === "") {
+          esconderResultado();
+          return;
+        }
+
+        const quantidade = parseInt(valorDigitado, 10);
+
+        if (isNaN(quantidade) || quantidade <= 0) {
+          esconderResultado();
+          return;
+        }
+
         const horasAno = quantidade * HORAS_POR_VIDEO_ANO;
         const valorAno = horasAno * VALOR_POR_HORA;
 
@@ -191,10 +213,17 @@
 
         resultadoValor.textContent =
           `Se levarmos em conta um valor modesto de R$ 12,00/h é o equivalente a uma incrível economia de ${formatarMoeda(valorAno)} ao ano.`;
+
+        if (economiaResultado.style.display === "none") {
+          mostrarResultado();
+        }
       }
 
+      inputVideos.value = "";
+      economiaResultado.style.display = "none";
+      economiaResultado.classList.remove("mostrar");
+
       inputVideos.addEventListener("input", atualizarCalculo);
-      atualizarCalculo();
     })();
   </script>
 </body>
