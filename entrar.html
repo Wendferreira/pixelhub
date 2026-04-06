@@ -8,7 +8,7 @@
 </head>
 <body>
   <main class="login-page">
-    <section class="login-visual">
+    <section class="login-visual" id="login-visual">
       <div class="login-visual-overlay"></div>
 
       <div class="login-visual-content">
@@ -67,5 +67,23 @@
       </div>
     </section>
   </main>
+
+  <script>
+    // Função para mudar a imagem de fundo aleatoriamente
+    function changeBackgroundImage() {
+      const images = [
+        'assets/images/entrar-hero1.jpg', // Caminho atualizado para as imagens dentro da pasta "images"
+        'assets/images/entrar-hero2.jpg',
+        'assets/images/entrar-hero3.jpg'
+      ];
+
+      const randomIndex = Math.floor(Math.random() * images.length);
+      const loginVisual = document.getElementById('login-visual');
+      loginVisual.style.backgroundImage = `url(${images[randomIndex]})`;
+    }
+
+    // Chama a função ao carregar a página
+    window.onload = changeBackgroundImage;
+  </script>
 </body>
 </html>
