@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Pixel Hub</title>
+  <link rel="stylesheet" href="assets/contato.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#narracao-clonagem">Recursos</a></li>
+        <li><a href="preco.html">Preço</a></li>
+        <li><a href="narracao.html">Narração</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="entrar.html" class="btn-entrar">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contato-hero">
+      <div class="contato-hero-container">
+        <span class="hero-badge">Contato</span>
+        <h1>Fale com a equipe do Pixel Hub</h1>
+        <p>
+          Tire dúvidas, solicite suporte, envie sugestões ou fale com nosso time comercial.
+          Estamos aqui para ajudar você a produzir mais e crescer com mais velocidade.
+        </p>
+        <div class="hero-actions">
+          <a href="#formulario-contato" class="hero-btn hero-btn-fill">Enviar mensagem</a>
+          <a href="#canais-atendimento" class="hero-btn hero-btn-outline">Ver canais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato-canais" id="canais-atendimento">
+      <div class="contato-canais-container">
+        <div class="contato-cards">
+          <article class="contato-card">
+            <div class="contato-icon">✉</div>
+            <h2>E-mail</h2>
+            <p>Para suporte, dúvidas gerais e atendimento comercial.</p>
+            <a href="mailto:[SEU-EMAIL]">[SEU-EMAIL]</a>
+          </article>
+
+          <article class="contato-card">
+            <div class="contato-icon">☎</div>
+            <h2>WhatsApp</h2>
+            <p>Atendimento rápido para dúvidas e acompanhamento.</p>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">[SEU-NÚMERO]</a>
+          </article>
+
+          <article class="contato-card">
+            <div class="contato-icon">⌚</div>
+            <h2>Horário</h2>
+            <p>Nosso time atende em horário comercial.</p>
+            <span>Seg a Sex, das 09h às 18h</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato-conteudo">
+      <div class="contato-layout">
+        <div class="contato-info">
+          <article class="info-card destaque-info">
+            <h2>Estamos prontos para te atender</h2>
+            <p>
+              Se você quer conhecer melhor a plataforma, entender os planos, falar sobre recursos,
+              suporte técnico ou parcerias, use um dos canais ao lado ou envie sua mensagem pelo formulário.
+            </p>
+            <p>
+              Nossa equipe responde o mais rápido possível, de acordo com o volume de atendimento.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Assuntos que você pode tratar aqui</h3>
+            <ul>
+              <li>dúvidas sobre planos e preços</li>
+              <li>problemas de acesso ou login</li>
+              <li>suporte técnico da plataforma</li>
+              <li>sugestões de melhorias</li>
+              <li>dúvidas sobre cobrança</li>
+              <li>parcerias e contato comercial</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Informações da empresa</h3>
+            <div class="empresa-box">
+              <p><strong>Empresa:</strong> Pixel Hub / [NOME DA EMPRESA]</p>
+              <p><strong>E-mail:</strong> [SEU-EMAIL]</p>
+              <p><strong>WhatsApp:</strong> [SEU-NÚMERO]</p>
+              <p><strong>Cidade/UF:</strong> [SUA CIDADE/UF]</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="contato-form-area" id="formulario-contato">
+          <article class="form-card">
+            <h2>Envie sua mensagem</h2>
+            <p>
+              Preencha o formulário abaixo para falar com a equipe do Pixel Hub.
+            </p>
+
+            <form class="contato-form" action="#" method="post">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="telefone">Telefone / WhatsApp</label>
+                  <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto">
+                    <option value="">Selecione</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea>
+              </div>
+
+              <button type="submit" class="btn-enviar">Enviar mensagem</button>
+
+              <p class="form-aviso">
+                Antes de publicar, conecte este formulário ao seu backend, Formspree, Netlify Forms
+                ou outro serviço de envio.
+              </p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Pixel Hub - Todos os direitos reservados</p>
+      <div class="footer-links">
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
