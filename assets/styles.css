@@ -440,22 +440,17 @@ footer {
 }
 
 .economia-container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .economia-container h2 {
-  font-size: 3em;
-  color: #000;
-  line-height: 1.18;
-  margin: 0 0 26px;
-  font-weight: 700;
+  font-size: 2.5em;
+  color: #333;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  font-weight: bold;
   text-align: center;
-  max-width: 1100px;
 }
 
 .economia-formulario {
@@ -463,14 +458,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   width: 100%;
 }
 
 .economia-formulario label {
-  font-size: 1.35em;
-  color: #000;
-  font-weight: 700;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: normal;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -482,10 +477,11 @@ footer {
   border: 1px solid #bfc7d1;
   border-radius: 6px;
   padding: 0 14px;
-  font-size: 1.15em;
+  font-size: 1.05em;
   outline: none;
   box-sizing: border-box;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .economia-formulario input:focus {
@@ -509,29 +505,28 @@ footer {
 }
 
 .economia-label {
-  font-size: 1.3em;
-  color: #000;
-  font-weight: 700;
-  margin: 0 0 14px;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: normal;
+  margin: 0 0 12px;
   text-align: center;
 }
 
 #resultado-horas {
-  font-size: 4.2em;
+  font-size: 2.8em;
   color: #148ce1;
-  line-height: 1.05;
-  margin: 0 0 20px;
-  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  font-weight: bold;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 
 #resultado-valor {
-  font-size: 1.9em;
-  color: #111;
-  line-height: 1.45;
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1000px;
   text-align: center;
 }
 
@@ -547,31 +542,23 @@ footer {
   .template-content h2,
   .roteiro-content h2,
   .narracao-content h2,
-  .banco-content h2 {
+  .banco-content h2,
+  .economia-container h2 {
     font-size: 2.3em;
   }
 
   .template-content p,
   .roteiro-content p,
   .narracao-content p,
-  .banco-content p {
+  .banco-content p,
+  .economia-formulario label,
+  .economia-label,
+  #resultado-valor {
     font-size: 1.1em;
   }
 
-  .economia-container h2 {
-    font-size: 2.5em;
-  }
-
-  .economia-formulario label {
-    font-size: 1.2em;
-  }
-
   #resultado-horas {
-    font-size: 3.4em;
-  }
-
-  #resultado-valor {
-    font-size: 1.45em;
+    font-size: 2.5em;
   }
 }
 
@@ -616,14 +603,18 @@ footer {
   .template-content h2,
   .roteiro-content h2,
   .narracao-content h2,
-  .banco-content h2 {
+  .banco-content h2,
+  .economia-container h2 {
     font-size: 2.1em;
   }
 
   .template-content p,
   .roteiro-content p,
   .narracao-content p,
-  .banco-content p {
+  .banco-content p,
+  .economia-formulario label,
+  .economia-label,
+  #resultado-valor {
     font-size: 1.05em;
   }
 
@@ -648,26 +639,14 @@ footer {
     object-fit: cover;
   }
 
-  .economia-container h2 {
-    font-size: 2em;
-  }
-
-  .economia-formulario label {
-    font-size: 1.1em;
-  }
-
   .economia-formulario input {
     max-width: 280px;
     height: 50px;
-    font-size: 1.05em;
+    font-size: 1em;
   }
 
   #resultado-horas {
-    font-size: 2.6em;
-  }
-
-  #resultado-valor {
-    font-size: 1.2em;
+    font-size: 2.2em;
   }
 }
 
@@ -675,22 +654,18 @@ footer {
   .template-content h2,
   .roteiro-content h2,
   .narracao-content h2,
-  .banco-content h2 {
+  .banco-content h2,
+  .economia-container h2 {
     font-size: 1.8em;
   }
 
   .template-content p,
   .roteiro-content p,
   .narracao-content p,
-  .banco-content p {
-    font-size: 1em;
-  }
-
-  .economia-container h2 {
-    font-size: 1.6em;
-  }
-
-  .economia-formulario label {
+  .banco-content p,
+  .economia-formulario label,
+  .economia-label,
+  #resultado-valor {
     font-size: 1em;
   }
 
@@ -701,10 +676,6 @@ footer {
   }
 
   #resultado-horas {
-    font-size: 2em;
-  }
-
-  #resultado-valor {
-    font-size: 1.05em;
+    font-size: 1.9em;
   }
 }
