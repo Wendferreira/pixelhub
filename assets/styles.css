@@ -301,26 +301,21 @@ footer {
   line-height: 1.6;
 }
 
-/* ===================================================== */
-/* PREVIEW RECURSOS */
-/* TEXTO À ESQUERDA E IMAGEM À DIREITA */
-/* ===================================================== */
-
+/* Preview Recursos */
 #preview-recursos {
   background-color: #e0f7fa;
   padding: 70px 10%;
-  text-align: center;
 }
 
 .template-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  /*flex-direction: row-reverse;*/
+  flex-direction: row-reverse;
   align-items: stretch;
   justify-content: space-between;
   gap: 60px;
-  /*flex-wrap: nowrap;*/
+  flex-wrap: nowrap;
 }
 
 .template-image {
@@ -344,7 +339,7 @@ footer {
 .template-content {
   flex: 1 1 62%;
   min-height: 180.3px;
-  padding-right: 0 35px 0 0;
+  padding-right: 35px;
   border-right: 2px solid #0098e5;
   box-sizing: border-box;
   text-align: right;
@@ -358,8 +353,8 @@ footer {
   color: #333;
   line-height: 1.15;
   margin: 0 0 18px;
-  /*font-family: Arial, sans-serif;
-  font-weight: bold;*/
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 .template-content p {
@@ -367,15 +362,11 @@ footer {
   color: #666;
   line-height: 1.6;
   margin: 0;
-  /*font-family: Arial, sans-serif;
-  font-weight: normal;*/
+  font-family: Arial, sans-serif;
+  font-weight: normal;
 }
 
-/* ===================================================== */
-/* PREVIEW ROTEIRO */
-/* IMAGEM À ESQUERDA E TEXTO À DIREITA */
-/* ===================================================== */
-
+/* Preview Roteiro */
 #preview-roteiro {
   background-color: #f4f4f4;
   padding: 70px 10%;
@@ -440,6 +431,79 @@ footer {
   font-weight: normal;
 }
 
+/* Seção cálculo */
+#economia-calculo {
+  background-color: #f4f4f4;
+  padding: 40px 10% 80px;
+  text-align: center;
+}
+
+.economia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.economia-container h2 {
+  font-size: 2.4em;
+  color: #000;
+  line-height: 1.2;
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+
+.economia-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.economia-formulario label {
+  font-size: 1.1em;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.economia-formulario input {
+  width: 100%;
+  max-width: 250px;
+  height: 46px;
+  border: 1px solid #bfc7d1;
+  border-radius: 4px;
+  padding: 0 14px;
+  font-size: 1.05em;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.economia-formulario input:focus {
+  border-color: #0098e5;
+}
+
+.economia-label {
+  font-size: 1.05em;
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+#resultado-horas {
+  font-size: 3.1em;
+  color: #148ce1;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+#resultado-valor {
+  font-size: 1.2em;
+  color: #111;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
   .template-container,
@@ -461,6 +525,14 @@ footer {
   .narracao-content p,
   .banco-content p {
     font-size: 1.1em;
+  }
+
+  .economia-container h2 {
+    font-size: 2.1em;
+  }
+
+  #resultado-horas {
+    font-size: 2.7em;
   }
 }
 
@@ -511,7 +583,8 @@ footer {
   #preview-recursos,
   #preview-roteiro,
   #narracao-clonagem,
-  #banco-imagens {
+  #banco-imagens,
+  #economia-calculo {
     padding-left: 6%;
     padding-right: 6%;
   }
@@ -527,6 +600,18 @@ footer {
     aspect-ratio: 380 / 180.3;
     object-fit: cover;
   }
+
+  .economia-container h2 {
+    font-size: 1.8em;
+  }
+
+  #resultado-horas {
+    font-size: 2.2em;
+  }
+
+  #resultado-valor {
+    font-size: 1.05em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -541,6 +626,22 @@ footer {
   .roteiro-content p,
   .narracao-content p,
   .banco-content p {
+    font-size: 1em;
+  }
+
+  .economia-container h2 {
+    font-size: 1.55em;
+  }
+
+  .economia-formulario label {
+    font-size: 1em;
+  }
+
+  #resultado-horas {
+    font-size: 1.8em;
+  }
+
+  #resultado-valor {
     font-size: 1em;
   }
 }
