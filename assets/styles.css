@@ -311,7 +311,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row-reverse;
   align-items: stretch;
   justify-content: space-between;
   gap: 60px;
@@ -319,6 +318,7 @@ footer {
 }
 
 .template-image {
+  order: 2;
   flex: 0 0 38%;
   min-height: 180.3px;
   display: flex;
@@ -337,6 +337,7 @@ footer {
 }
 
 .template-content {
+  order: 1;
   flex: 1 1 62%;
   min-height: 180.3px;
   padding-right: 35px;
@@ -564,6 +565,14 @@ footer {
     flex: 1 1 100%;
     width: 100%;
     min-height: auto;
+    order: initial;
+  }
+
+  .template-content,
+  .roteiro-content,
+  .narracao-content,
+  .banco-content {
+    order: initial;
   }
 
   .template-content h2,
