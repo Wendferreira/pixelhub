@@ -496,6 +496,16 @@ footer {
 .economia-resultado {
   width: 100%;
   text-align: center;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  pointer-events: none;
+}
+
+.economia-resultado.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .economia-label {
