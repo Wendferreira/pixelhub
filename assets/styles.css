@@ -496,6 +496,7 @@ footer {
   transform: translateY(12px);
   transition: opacity 0.45s ease, transform 0.45s ease;
   pointer-events: none;
+  overflow-x: auto;
 }
 
 .economia-resultado.mostrar {
@@ -526,8 +527,10 @@ footer {
   color: #666;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: none;
   text-align: center;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 /* Responsividade */
