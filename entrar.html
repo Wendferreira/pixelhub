@@ -71,16 +71,19 @@
   <script>
     // Função para mudar a imagem de fundo aleatoriamente
     function changeBackgroundImage() {
-      const images = [
-        'assets/images/entrar-hero1.jpg', // Caminho atualizado para as imagens dentro da pasta "images"
-        'assets/images/entrar-hero2.jpg',
-        'assets/images/entrar-hero3.jpg'
-      ];
+  const images = [
+    'assets/images/entrar-hero1.jpg',
+    'assets/images/entrar-hero2.jpg',
+    'assets/images/entrar-hero3.jpg'
+  ];
 
-      const randomIndex = Math.floor(Math.random() * images.length);
-      const loginVisual = document.getElementById('login-visual');
-      loginVisual.style.backgroundImage = `url(${images[randomIndex]})`;
-    }
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const loginVisual = document.getElementById('login-visual');
+  const selectedImage = images[randomIndex];
+
+  console.log('Imagem selecionada:', selectedImage); // Verifica a imagem selecionada
+  loginVisual.style.backgroundImage = `url(${selectedImage})`;
+}
 
     // Chama a função ao carregar a página
     window.onload = changeBackgroundImage;
